@@ -1,0 +1,18 @@
+.table {
+  display: flex;
+  flex-direction: row;
+
+  &__body {
+    margin: 0 auto;
+  }
+
+  &__before {
+    position: relative;
+    margin: 170px;
+  }
+}
+
+.button {
+  margin: 0 60px;
+  padding: 10px;
+}

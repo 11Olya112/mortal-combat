@@ -1,27 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.scss';
-
-interface Props {
-  onClick: () => void;
-}
-
-export const Provider: React.FC<Props> = React.memo(
-  ({ onClick, children }) => (
-    <button
-      type="button"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  ),
-);
+import { Battle } from './Components/Battle';
+import { Main } from './Components/Main';
 
 export const App: React.FC = () => {
+  const [showComponents, setShowComponents] = useState(false);
+  const [isReady, setIsReady] = useState(false);
+
+  interface SelectedPlayerState {
+    playerId: number | null;
+    playerImage: string | undefined;
+  }
+
+  const [selectedPlayer, setSelectedPlayer] = useState<SelectedPlayerState>({
+    playerId: null,
+    playerImage: undefined,
+  });
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (isReady) {
+        setShowComponents(true);
+        setTimeout(() => {
+          setShowComponents(false);
+        }, 4000);
+      }
+    }, 2000);
+  }, [isReady]);
+
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
-    </div>
+    <>
+      {!showComponents && (
+        <Main
+          selectedPlayer={selectedPlayer}
+          setSelectedPlayer={setSelectedPlayer}
+          setIsReady={setIsReady}
+        />
+      )}
+      {showComponents && (
+        <Battle selectedPlayer={selectedPlayer} />
+      )}
+    </>
   );
 };

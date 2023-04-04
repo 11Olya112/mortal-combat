@@ -1,0 +1,19 @@
+.battle {
+  text-align: center;
+  align-items: center;
+
+  &__starter {
+    margin: 0 auto;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__players {
+    align-items: center;
+  }
+}
