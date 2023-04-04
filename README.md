@@ -1,9 +1,17 @@
-# React TypeScript Starter Pack
+Mortal combat: a few starter from the mortal combat game with keyboard control
 
-To use this template click `Use this template`
+In my project I used some technologies such as React.js, SCSS, BEM.
 
-### Available Scripts
+-Link to preview: https://11olya112.github.io/Eco__cosmetics/
 
-`Deploy` - available to deploy your application to gh-pages
+-Link to layout: https://www.figma.com/file/Fz588JKGuPS2Bk21De4KE5/Brand-of-eco-cosmetics-_FE-students?node-id=1%3A2&t=Sl7UOd0ogvLug12s-0
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+Additional startup instructions:
+
+1.Fork the repository
+
+2.Clone the forked repo
+
+3.Run npm install to install the dependencies
+
+4.Run npm start
