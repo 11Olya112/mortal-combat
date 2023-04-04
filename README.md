@@ -1,10 +1,8 @@
 Mortal combat: a few starter from the mortal combat game with keyboard control
 
-In my project I used some technologies such as React.js, SCSS, BEM.
+In my project I used some technologies such as React.js,Typescript, SCSS, BEM.
 
--Link to preview: https://11olya112.github.io/Eco__cosmetics/
-
--Link to layout: https://www.figma.com/file/Fz588JKGuPS2Bk21De4KE5/Brand-of-eco-cosmetics-_FE-students?node-id=1%3A2&t=Sl7UOd0ogvLug12s-0
+-Link to preview: https://11olya112.github.io/mortal-combat/
 
 Additional startup instructions:
 
